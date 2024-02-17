@@ -12,10 +12,11 @@
     <link rel="stylesheet" href="Styles/header.css">
     <link rel="stylesheet" href="Styles/video.css">
     <link rel="stylesheet" href="Styles/sidebar.css">
+    <link rel="stylesheet" href="Styles/shorts.css">
 </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <div class="left-section">
             <img class="hamburger" src="Component/hamburger-menu.svg" alt="">
             <img class="youtube-icon" src="Component/youtube-logo.svg" alt="">
@@ -24,23 +25,29 @@
             <input class="search-bar" type="text" placeholder="Search">
             <button class="search-button">
                 <img style="height: 24px;width: 24px; padding-top: 3px;" src="Component/search.svg" alt="">
+                <div class="tooltip">Search</div>
             </button>
             <button class="voice-search-button">
                 <img style="height: 25px;" src="Component/voice-search-icon.svg" alt="">
+                <div class="tooltip">Search with your voice</div>
             </button>
         </div>
         <div class="right-section">
-            <img class="upload-app-icon" src="Component/upload.svg" alt="">
+            <div class="upload-icon-container">
+                <img class="upload-app-icon" src="Component/upload.svg" alt="">
+                <div class="tooltip">Create</div>
+            </div>
             <div class="notification-container">
                 <img class="notifications" src="Component/notifications.svg" alt="">
                 <div class="notification-count">3</div>
+                <div class="tooltip">Notifications</div>
             </div>
             <img class="channel-info" src="Component/channel.jpg" alt="">
 
         </div>
-    </div>
+    </header>
 
-    <div class="sidebar">
+    <nav class="sidebar">
         <div class="sidebar-link">
             <img class="home-icon" src="Component/home.svg" alt="">
             <p>Home</p>
@@ -57,112 +64,179 @@
             <img class="you-icon" src="Component/you.svg" alt="">
             <p>You</p>
         </div>
-    </div>
+    </nav>
 
-    <div class="video-grid">
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnails/First.webp" alt="">
-                <div class="video-time">00:19</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="Channel-Logo/first.jpg" alt="">
+    <main>
+        <section class="video-grid">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/First.webp" alt="">
+                    <div class="video-time">00:19</div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Me at the zoo</p>
-                    <p class="video-author">jawed</p>
-                    <p class="video-stats">307M views &#183 18 years ago</p>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channel-Logo/first.jpg" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Me at the zoo</p>
+                        <p class="video-author">jawed</p>
+                        <p class="video-stats">307M views &#183 18 years ago</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnails/Mrbeast.webp" alt="">
-                <div class="video-time">25:42</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="Channel-Logo/channels4_profile (1).jpg" alt="">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/Mrbeast.webp" alt="">
+                    <div class="video-time">25:42</div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">$456,000 Squid Game In Real Life!</p>
-                    <p class="video-author">MrBeast</p>
-                    <p class="video-stats">571M views &#183 2 years ago</p>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channel-Logo/channels4_profile (1).jpg" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">$456,000 Squid Game In Real Life!</p>
+                        <p class="video-author">MrBeast</p>
+                        <p class="video-stats">571M views &#183 2 years ago</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnails/hqdefault.webp" alt="">
-                <div class="video-time">19:37</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="Channel-Logo/channels4_profile.jpg" alt="">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/hqdefault.webp" alt="">
+                    <div class="video-time">19:37</div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Using Apple Vision Pro: What It's Actually Like!</p>
-                    <p class="video-author">Marques Brownlee</p>
-                    <p class="video-stats">24M views &#183 9 days ago</p>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channel-Logo/channels4_profile.jpg" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Using Apple Vision Pro: What It's Actually Like!</p>
+                        <p class="video-author">Marques Brownlee</p>
+                        <p class="video-stats">24M views &#183 9 days ago</p>
+                    </div>
                 </div>
             </div>
-        </div>
 
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnails/shark.webp" alt="">
-                <div class="video-time">45:18</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="Channel-Logo/shark.jpg" alt="">
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/shark.webp" alt="">
+                    <div class="video-time">45:18</div>
                 </div>
-                <div class="video-info">
-                    <p class="video-title">Belly Button से क्यों Obsessed हैं ये Pitchers? | Shark Tank India Season 1
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channel-Logo/shark.jpg" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Belly Button से क्यों Obsessed हैं ये Pitchers? | Shark Tank India Season
+                            1
+                        </p>
+                        <p class="video-author">Shark Tank India</p>
+                        <p class="video-stats">439k views &#183 7 months ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/alen.webp" alt="">
+                    <div class="video-time">14:03</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channel-Logo/alen.jpg" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Animation vs. Math</p>
+                        <p class="video-author">Alan Becker</p>
+                        <p class="video-stats">50M views &#183 7 months ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/veri.webp" alt="">
+                    <div class="video-time">08:15</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channel-Logo/veri.jpg" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Chernobyl - What It's Like Today</p>
+                        <p class="video-author">Veritasium</p>
+                        <p class="video-stats">7.1M views &#183 8 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/yooooooooo.webp" alt="">
+                    <div class="video-time">00:11</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channel-Logo/yoooooooooo.jpg" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">yooooooooooo</p>
+                        <p class="video-author">tofu</p>
+                        <p class="video-stats">53M views &#183 8 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-preview">
+                <div class="thumbnail-row">
+                    <img class="thumbnail" src="Thumbnails/arijit.webp" alt="">
+                    <div class="video-time">09:17</div>
+                </div>
+                <div class="video-info-grid">
+                    <div class="channel-picture">
+                        <img class="profile-picture" src="Channel-Logo/arijit.jpg" alt="">
+                    </div>
+                    <div class="video-info">
+                        <p class="video-title">Arijit Singh with his soulful performance | 6th Royal Stag Mirchi Music
+                            Awards | Radio Mirchi</p>
+                        <p class="video-author">Mirchi Plus</p>
+                        <p class="video-stats">163M views &#183 9 years ago</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+        <section class="youtube-shorts">
+            <div class="shorts-header">
+                <div class="shorts-left">
+                    <img class="shorts-icon" src="Component/youtube-shorts-icon.svg" alt="">
+                    <p>
+                        Shorts
                     </p>
-                    <p class="video-author">Shark Tank India</p>
-                    <p class="video-stats">439k views &#183 7 months ago</p>
+                </div>
+                <div class="shorts-right">
+                    <img class="close-button" src="Component/youtube-shorts-close-icon.svg" alt="">
                 </div>
             </div>
-        </div>
+            <div class="shorts-grid">
+                <div class="shorts-preview">
+                    <div class="shorts-thumbnail-row">
+                        <img class="shorts-thumbnail" src="Shorts/song.webp" alt="">
+                    </div>
+                    <div class="shorts-info">
+                        <p class="shorts-title">Mr beastttttttttttttttt dgryuvgz ljdnvkjzdbv</p>
+                        <p class="shorts-views">6M views</p>
+                    </div>
+                </div>
+            </div>
 
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnails/alen.webp" alt="">
-                <div class="video-time">14:03</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="Channel-Logo/alen.jpg" alt="">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">Animation vs. Math</p>
-                    <p class="video-author">Alan Becker</p>
-                    <p class="video-stats">50M views &#183 7 months ago</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="video-preview">
-            <div class="thumbnail-row">
-                <img class="thumbnail" src="Thumbnails/veri.webp" alt="">
-                <div class="video-time">08:15</div>
-            </div>
-            <div class="video-info-grid">
-                <div class="channel-picture">
-                    <img class="profile-picture" src="Channel-Logo/veri.jpg" alt="">
-                </div>
-                <div class="video-info">
-                    <p class="video-title">Chernobyl - What It's Like Today</p>
-                    <p class="video-author">Veritasium</p>
-                    <p class="video-stats">7.1M views &#183 8 years ago</p>
-                </div>
-            </div>
-        </div>
-    </div>
+        </section>
+    </main>
 
 </body>
 

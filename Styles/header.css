@@ -11,6 +11,7 @@
     bottom: 40px;
     background-color: white;
     z-index: 100;
+    padding-left: 13px;
 }
 
 .left-section {
@@ -23,6 +24,13 @@
     width: 24px;
     height: 24px;
     padding: 8px;
+    transition: 0.15s;
+    cursor: pointer;
+}
+
+.hamburger:hover {
+    border-radius: 100px;
+    background-color: #00000015;
 }
 
 .youtube-icon {
@@ -32,6 +40,7 @@
     padding-right: 14px;
     width: 90px;
     height: 20px;
+    cursor: pointer;
 }
 
 .middle-section {
@@ -55,6 +64,60 @@
     width: 64px;
 }
 
+.search-button:hover {
+    background-color: #0000000D;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+}
+
+.search-button,
+.voice-search-button,
+.upload-icon-container,
+.notification-container {
+    position: relative;
+}
+
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-icon-container .tooltip,
+.notification-container .tooltip {
+    position: absolute;
+    top: 55px;
+    background-color: rgb(108, 108, 108);
+    color: white;
+    font-family: Roboto, Arial;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    padding-right: 7px;
+    border-radius: 5px;
+    font-size: 12px;
+    opacity: 0;
+    transition: opacity 0.15s;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-icon-container:hover .tooltip,
+.notification-container:hover .tooltip {
+    opacity: 0.9;
+}
+
+.voice-search-button .tooltip {
+    left: -49px;
+}
+
+.upload-icon-container .tooltip {
+    left: 5px;
+}
+
+.notification-container .tooltip {
+    left: -12px;
+}
+
+
 .voice-search-button {
     background-color: #f8f8f8;
     border: 0px;
@@ -63,7 +126,11 @@
     border-radius: 100px;
     margin-left: 15px;
     padding-top: 3px;
+}
 
+.voice-search-button:hover {
+    background-color: #0000001d;
+    cursor: pointer;
 }
 
 .search-bar {
@@ -82,8 +149,9 @@
     /* width: 5rem; */
 }
 
+
 .middle-section {
-    flex: 0 1 732px;
+    flex: 0 1 630px;
 }
 
 @media screen and (max-width:600px) {

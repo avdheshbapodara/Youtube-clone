@@ -5,6 +5,9 @@
     bottom: 0px;
     top: 56px;
     width: 64px;
+    z-index: 200;
+    padding-top: 3px;
+    padding-left: 5px;
 }
 
 .sidebar-link {
@@ -15,10 +18,12 @@
     justify-content: center;
     font-family: Roboto, Arial;
     font-size: 10px;
+    cursor: pointer;
 }
 
 .sidebar-link:hover {
     background-color: #0000000D;
+    border-radius: 12px;
 }
 
 .sidebar-link img {

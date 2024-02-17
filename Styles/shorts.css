@@ -1,0 +1,59 @@
+.youtube-shorts {
+    padding-left: 80px;
+}
+
+.shorts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 16px;
+    row-gap: 40px;
+    padding-bottom: 800px;
+}
+
+.shorts-title {
+    margin-top: 0px;
+    font-weight: 500;
+    line-height: 22px;
+}
+
+.shorts-thumbnail-row {
+    padding-bottom: 8px;
+}
+
+.shorts-views {
+    margin-top: 5px;
+    color: #606060;
+}
+
+.shorts-thumbnail {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.shorts-info {
+    display: inline-block;
+    grid-template-columns: 48px 1fr;
+}
+
+.shorts-header {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 24px 8px;
+}
+
+.shorts-icon {
+    width: 24px;
+    padding-right: 11px;
+}
+
+.close-button {
+    width: 40px;
+}
+
+.shorts-left {
+    display: flex;
+    flex: 1;
+    font-weight: 700;
+    font-size: 23px;
+    align-items: center;
+}
